@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
-###Added libraries
+### Added libraries
 
-. brazilian-values - https://www.npmjs.com/package/brazilian-values
-. primeicons - https://primeng.org/setup
-. primeng - https://primeng.org/setup
+. brazilian-values - https://www.npmjs.com/package/brazilian-values <br>
+. primeicons - https://primeng.org/setup <br>
+. primeng - https://primeng.org/setup <br>
 
 ## Development server
 
