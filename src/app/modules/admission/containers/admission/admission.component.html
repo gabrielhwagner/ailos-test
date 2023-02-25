@@ -1,0 +1,66 @@
+<div class="admission">
+  <app-steps></app-steps>
+  <div>
+    <h5 class="admission__title">
+      Informe o CPF do futuro cooperado (a)
+    </h5>
+    <p class="admission__description">
+      Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+    </p>
+    <p class="admission__description">
+      Digite apenas os números (sem pontos ou traços).
+    </p>
+
+    <form [formGroup]="form">
+      <div class="admission__search">
+        <div class="admission__input">
+          <label for="">CPF</label>
+          <p-inputMask
+            mask="999.999.999-99"
+            formControlName="cpf">
+          </p-inputMask>
+          <app-error-message
+            *ngIf="form.touched"
+            [form]="form"
+            inputName="cpf"
+          ></app-error-message>
+        </div>
+
+        <button
+          type="button"
+          (click)="submit()"
+          [disabled]="form.disabled"
+        >
+          <span *ngIf="!isLoading">
+            Consultar por CPF
+          </span>
+
+          <i
+            *ngIf="isLoading"
+            class="pi pi-spin pi-spinner">
+          </i>
+        </button>
+      </div>
+    </form>
+
+    <div
+      *ngIf="form.disabled"
+      class="admission__result"
+    >
+      <app-customer-summary></app-customer-summary>
+    </div>
+
+    <div class="admission__shortcut">
+      <button
+        *ngIf="form.disabled"
+        class="button primary"
+        (click)="resetScreen()"
+      >
+        Iniciar nova admissão
+      </button>
+      <button class="button secondary">
+        Dicas para admissão
+      </button>
+    </div>
+  </div>
+</div>

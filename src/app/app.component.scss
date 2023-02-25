@@ -1,0 +1,13 @@
+.app {
+  &__content {
+    margin-left: 100px;
+    position: relative;
+  }
+
+  &__modules {
+    margin-top: 89px;
+    padding: 25px 25px 0;
+    // calc between screen size and header
+    min-height: calc(100vh - 89px);
+  }
+}

@@ -1,0 +1,17 @@
+p-inputmask {
+  width: 100%;
+
+  input.p-inputtext {
+    width: 100%;
+    padding: 8px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #889499;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  &.ng-touched.ng-invalid > input.p-inputtext {
+    border-color: #f55656;
+  }
+}

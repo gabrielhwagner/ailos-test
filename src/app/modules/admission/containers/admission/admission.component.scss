@@ -1,0 +1,91 @@
+.admission {
+  &__title {
+    font-size: 22px;
+    color: #101213;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__description {
+    color: #4F575E;
+    font-size: 11px;
+    line-height: 5px;
+  }
+
+  &__search {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+
+    button {
+      background-color: #165C7D;
+      color: #ffffff;
+      width: 172px;
+      height: 34px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 25px;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: auto;
+      }
+    }
+  }
+
+  &__input {
+    width: 270px;
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      color: #040F14;
+      margin-bottom: 6px;
+      display: block;
+    }
+  }
+
+  &__result {
+    margin-top: 15px;
+  }
+
+  &__shortcut {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 78px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 15px;
+  }
+
+  .button {
+    padding: 0 28px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    height: 48px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &.primary {
+      color: #ffffff;
+      background-color: #165C7D;
+    }
+
+    &.secondary {
+      color: #165C7D;
+      background-color: #ffffff;
+      border: 1px solid #165C7D;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

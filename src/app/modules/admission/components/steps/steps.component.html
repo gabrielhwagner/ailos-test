@@ -1,0 +1,14 @@
+<ul class="steps">
+  <li
+    *ngFor="let option of options; index as i"
+    class="steps__item"
+    [ngClass]="{
+      'steps__item--finish': activeStep > i + 1,
+      'steps__item--current': activeStep === i + 1,
+      'steps__item--next': activeStep < i + 1
+    }"
+  >
+    <div class="steps__check"></div>
+    <span class="steps__label">{{option}}</span>
+  </li>
+</ul>
